@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Encuenta tu SuperHero</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="assets/img/favicon.ico" alt="Logo hero"> SuperHero</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contacto<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Header -->
+  <header class="text-center my-3">
+      <img src="assets/img/sh1.jpg" alt="Super Hero">
+  </header>
+  <!-- Formulario -->
+  <section class="mx-3 my-2">
+      <h1>Encuentra tu SuperHero</h1>
+      <form id="formulario">
+          <div class="form-group">
+              <label for="superhero">Ingresa el número del SuperHero a buscar</label>
+              <input type="number" class="form-control" id="superhero-input" />
+          </div>
+          <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+  </section>
+  <section id="request-section"></section>
+  <!-- Cards -->
+  <section class="mx-3 my-2">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <h5 class="text-center">SuperHero Encontrado</h5>
+        <div class="card flex-row flex-wrap">
+          <div class= "col-12 col-sm-4 px-0">
+            <img src="" alt="" id="imagen" class="img-fluid" />
+          </div>
+          <div class="card-body col-12 col-sm-8" style="font-size: small;">
+            <h6 id="nombre"></h6>
+            <p id="conexiones"></p>
+            <hr />
+            <p id="publicadopor"></p>
+            <hr />
+            <p id="ocupacion"></p>
+            <hr />
+            <p id="aparicion"></p>
+            <hr />
+            <p id="altura"></p>
+            <hr />
+            <p id="peso"></p>
+            <hr />
+            <p id="alianzas"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card border-0">
+          <div class="card-body">
+            <div id="chartContainer" style="height: 370px; width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>  
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
